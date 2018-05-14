@@ -1,0 +1,291 @@
+<%
+
+If Request("fname") <> "" Then
+
+Response.Redirect("http://www.savatree.com")
+response.end
+end if
+%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>St. Croix Tree Service | Contact Us</title><script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script>
+<META name='Title' content='St. Croix Tree Service'>
+<META name='Keywords' content='Tree Removal Minnesota, Tree Shrub Pruning Minnesota, Stump Removal Minnesota, Plant Healthcare & Fertilization Minnesota, Storm Damage & Clean Up Minnesota, Brush Hauling, Lot Clearing Minnesota, Tree Planting Minnesota'>
+<META name='Description' content='St. Croix Tree Service has provided high quality tree care since 1974.'>
+<link rel="stylesheet" type="text/css" href="CSS/Layout.css"/>
+<link rel="stylesheet" type="text/css" href="CSS/LeftNavCenter.css"/>
+<script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script>
+</head>
+
+<body>
+
+	<div id="Outer">
+    	<div id="Shadow">
+            <div id="MainBody">
+            	<div id="Header">
+                	<div id="IconZone">
+                    	<img src="Images/Icon.png" alt="St. Croix Tree Service Icon" />
+                    </div><!--IconZone-->
+                    <div id="LogoZone2" align="center">
+                    	<img src="http://www.savatree.com/images/acq/stc/logo2.png" alt="St. Croix Tree Service Icon" width="210px"/>
+                    </div><!--LogoZone-->
+                    <div id="PhoneNumberZone"><p>
+                        East Metro: 651.770.3744<br />
+                    	West Metro: 952.881.3779<br />
+                        Wisconsin: 715.749.3475<br /></p>
+                    </div><!--PhoneNumberZone-->
+<div></div>                  
+                </div><!--Header-->
+                <div id="TopNav">
+                	<ul>
+                    	<li class="home">
+						
+<script type="text/javascript">
+	function ValidateForm(f) {
+		var errs = '';
+		var isCustChecked = false;
+		
+		var custVal = '';
+		for (i = 0; i < f.cust.length; i++) {
+			if (f.cust[i].checked) {
+				isCustChecked = true;
+				custVal = f.cust[i].value;
+				break;
+			}
+		}
+		if (!isCustChecked)
+			errs += "New or Existing Customer must be selected.\r\n"; 
+		if (f.email.value == '' || (f.email.value.indexOf('@') < 1 || f.email.value.indexOf('.') < 1))
+			errs += "Email Address is required.\r\n";
+		if(f.confirmemail.value == '' || (f.confirmemail.value.toLowerCase() != f.email.value.toLowerCase()))
+			errs += "Email Address and Confirm Email do not match.\r\n";
+		if (f.fname.value == '')
+			errs += "First name is required.\r\n";
+		if (f.lname.value == '')
+			errs += "Last name is required.\r\n";
+		if (f.streetaddress.value == '')
+			errs += "Street Address is required.\r\n";
+		if(f.city.value == '')
+			errs += "City is required.\r\n";
+		if (f.stateCode.selectedIndex < 1)
+			errs += "State is required.\r\n";
+		if(f.zip.value == '' || f.zip.value.length < 5 || isNaN(f.zip.value))
+			errs += "Zip is required and must be a valid number.\r\n";
+		if (f.dayphone.value == '')
+			errs += "Daytime Phone is required.\r\n";
+		
+		<%If tempCust <> "Existing Customer" Then %>
+		if (custVal == 'New Customer' && f.Referral.value == '')
+			errs += "How did you hear about us? is required.\r\n";
+		<% End If %>
+		var isServiceChecked = false;
+			for (i = 0; i < f.service.length; i++) 
+			{
+				if (f.service[i].checked) {
+					isServiceChecked = true;
+					break;
+				}
+			}
+		if( ! isServiceChecked )
+			errs += "A service must be selected.\r\n";
+			
+		if( errs.length > 0 )
+		{
+			alert('The following prevented your form from submitting:\r\n\r\n' + errs + '\r\nPlease make your corrections to continue.');
+			return false;
+		}
+		else
+			return true;
+			
+	}
+	function UnStuffIt()
+	{
+		document.getElementById('stuff').style.display = 'block';
+	}
+	function StuffIt()
+	{
+	document.getElementById('stuff').style.display = 'none';
+	}
+	function CheckReferral() {
+		var field = document.getElementById('Referral');
+		if (field.value == 'Friend or Neighbor')
+			document.getElementById('fnDiv').style.display = 'block';
+		else
+			document.getElementById('fnDiv').style.display = 'none';
+	}
+</script>
+						
+                        	<a class="home" href="index.html">&nbsp;</a>
+                        </li>
+                        <li>
+                        	<a class="aboutus" href="AboutUs.html">About Us</a>
+                            <ul class="aboutusdrop">
+                            	<li><a href="History.html">History</a></li>
+                                <li><a href="TravelArea.html">Service Area</a></li>
+                                <li><a href="OurStaff.html">Our Staff</a></li>
+                              	<li><a href="Employment.html">Employment</a></li>
+                              	<li><a href="Testimonials.html">Testimonials</a></li>                                                            
+                           </ul>
+                        </li>
+                        <li>
+                        	<a class="services" href="Services.html">Services</a>
+                            <ul class="servicesdrop">
+                            	<li><a href="TreeRemoval.html">Tree Removal</a></li>
+                                <li><a href="TreeShrubPruning.html">Tree & Shrub Pruning</a></li>
+                              	<li><a href="StumpRemoval.html">Stump Removal</a></li>
+                              	<li><a href="PlantHealthCareFertilization.html">Plant Health Care & Fertilization</a></li>
+                                <li><a href="StormDamageCleanUp.html">Storm Damage & Clean Up</a></li>
+                                <li><a href="BrushHaulingChipping.html">Brush Hauling / Chipping</a></li>
+                              	<li><a href="LotClearing.html">Lot Clearing</a></li>
+                              	<li><a href="TreePlanting.html">Tree Planting</a></li>                                                          
+                           </ul>
+                        </li>
+
+                        <li>
+                        	<a class="ourstaff" href="Testimonials.html">Testimonials</a>
+                        </li>
+                        <li>
+                        	<a class="education" href="Education.html">Education</a>
+                            <ul class="education">
+                            	<li><a href="CommonInsectsDisease.html">Common Insects & Disease</a></li>
+                                <li><a href="EABInfo.html">Emerald Ash Borer Information</a></li>
+                              	<li><a href="OtherInfo.html">General Information</a></li>
+                              	<li><a href="Links.html">Links</a></li>                                                            
+                           </ul>
+                        </li>
+                        <li><a class="selected contactus" href="ContactUs.html">Contact Us</a></li>
+                    </ul>
+                </div><!--TopNav-->
+
+           
+                <div id="Content">
+                   
+                   <div id="LeftZone">
+                    	<h1>Contact Us</h1>
+                           <ul class="ourstaff">
+                            	<li><a href="ContactUs.html">Contact Us</a></li>
+                                <li class="selected"><a class="white" href="RequestAQuote.html">Request A Free Estimate</a></li>                                                      
+                           </ul>
+           
+                  </div><!--LeftZone-->
+                  <div id="RightZone">
+                  	<h2> Request an Estimate</h2>
+                    <p>To request an estimate, please fill out the form below. A St. Croix Tree Service representative will contact you within 48 hours to discuss your tree care needs. </p>
+                  
+				  
+				   <form id="form1" name="form1" method="post" action="ContactForm/verify2.php">
+
+                        	<h5>Basic Information</h5>
+                        	<div class="block">
+                                <span class="contactinfo">Name</span>
+                                <span class="userinfo"><input id="name" name="name" type="text"/></span>
+                            </div>
+                            <div class="block">
+                                <span class="contactinfo">Address</span>
+                                <span class="userinfo"><input id="address" name="address" type="text"/></span>
+                            </div>
+                            <div class="block">
+                                <span class="contactinfo">City</span>
+                                <span class="userinfo">
+                                <input id="state" name="city" type="city"/></span>
+                            </div>
+                            <div class="block">
+                                <span class="contactinfo">State</span>
+                                <span class="userinfo">
+                                <input id="state" name="state" type="text"/></span>
+                            </div>
+                            <div class="block">
+                                <span class="contactinfo">Zip Code</span>
+                                <span class="userinfo"><input id="zip" name="zip" type="text"/></span>
+                            </div>
+
+                            <div class="block">
+                                <span class="contactinfo">Home Phone</span>
+                                <span class="userinfo"><input id="hphone" name="hphone" type="text"/></span>
+                            </div>
+                            <div class="block">
+                                <span class="contactinfo">Work Phone</span>
+                                <span class="userinfo"><input id="wphone" name="wphone" type="text"/></span>
+                            </div>
+                            <div class="block">
+                                <span class="contactinfo">Cell Phone</span>
+                                <span class="userinfo"><input id="cphone" name="cphone" type="text"/></span>
+                            </div>
+                            <div class="block">
+                                <span class="contactinfo">Email</span>
+                                <span class="userinfo"><input id="email" name="email" type="text"/></span>
+                            </div>
+                          
+                            <span class="info">How can we help you?</span>
+                            <span class="userinfo"><textarea id="additionalinformation" name="additionalinformation" rows="6" cols="50"></textarea></span>
+                                    
+                                    
+                      <div class="clearBoth">
+            <br />
+  </div>
+  
+  
+                            <span class="userinfo"><input id="submit" name="submit" value="submit" type="submit"/></span>                                                                                                                                                                                                                                                
+                        </form>
+                    
+  
+		
+		</td>
+		</tr>
+		
+		</table>
+                    
+                    </p>
+                  </div>
+                    <!--RightZone-->
+            </div><!--RightZone-->
+                </div><!--Content-->
+                <div id="Footer">
+                	<div id="BottomLeft">
+                    	<h3>Quick Links</h3>
+                    	<ul>
+                        	<li><a href="Testimonials.html">Testimonials</a></li>
+                            <li><a href="TravelArea.html">Service Area</a></li>
+                            <li><a href="Links.html">Links</a></li>
+                            <li><a href="ContactUs.html">Contact Us</a></li>
+                        </ul>
+                    </div><!--BottomLeft-->
+                    <div id="BottomMiddle">
+                    	<h3>Request an Estimate</h3>
+                                                <a href="RequestAQuote.html"><img src="CSS/Images/RequestAQuote.png"/></a><br /><br />
+                        <a href="http://www.facebook.com/StCroixTreeService"><img src="Images/fbook.png"/></a>
+                    </div><!--BottomMiddle-->
+                    <div id="BottomRight">
+                    	<a href="http://www.treecareindustry.org/Public/main_accreditation.htm" target="_blank"><img src="Images/Sponsor1.jpg" /></a>
+                        <a href="http://www.isa-arbor.com/home.aspx" target="_blank"><img src="Images/Sponsor2.jpg" /></a>
+                        <a href="http://www.treecareindustry.org/index.aspx" target="_blank"><img src="Images/Sponsor3.jpg" /></a>
+                        <a href="http://www.waa-isa.org/" target="_blank"><img src="Images/Sponsor4.jpg" /></a>
+                        <a href="http://www.msa-live.org/" target="_blank"><img src="Images/Sponsor5.jpg" /></a>
+              </div><!--BottomRight-->
+                   <div id="Credits">
+                   	<p>© 2011 - St. Croix Tree Service, 675 Grupe Street, Roberts, WI 54023<br />
+					Designed by <a href="http://lackeydesigns.com/">Lackey Designs</a></p>
+                   </div><!--Credits-->
+                  
+                </div><!--Footer-->
+            </div><!--MainBody-->
+        </div><!--Shadow-->
+    </div><!--Outer-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6727543-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script></body>
+</html>

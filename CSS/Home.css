@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* CSS Document */
+
+				#LeftZone{width:340px;float:left;min-height:200px;margin-right:35px;}
+					#LeftZone p{font-family:Androgyne, Georgia, "Times New Roman", Times, serif;font-size:24px;line-height:30px;}
+					
+				#RightZone{width:465px;padding:0px 0px 0px 35px;float:left;border-left:1px solid #000;}

@@ -1,0 +1,165 @@
+@charset "utf-8";
+/* ///////////////////////////////////////////////////////////////////// RESETS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+table {border-collapse: collapse;border-spacing: 0;}
+/* ///////////////////////////////////////////////////////////////////// STANDARDS */
+p{line-height:20px;font-size:12px;font-family:Verdana, Arial, Helvetica, sans-serif;margin-bottom:10px;}
+a{color:#006600;text-decoration:none;font-family:Verdana, Arial, Helvetica, sans-serif;}
+a:hover{text-decoration:underline;}
+img{padding:0px;margin:0px;border:none;}
+
+/* ///////////////////////////////////////////////////////////////////// HEADERS */
+h1{font-size:18px;font-weight:bold;font-family:Verdana, Arial, Helvetica, sans-serif;margin-bottom:15px;}
+h2{font-size:17px;font-weight:bold;font-family:Verdana, Arial, Helvetica, sans-serif;margin-bottom:10px;}
+h3{font-size:16px;font-weight:bold;font-family:Verdana, Arial, Helvetica, sans-serif;margin-bottom:10px;}
+h4{font-size:15px;font-weight:bold;font-family:Verdana, Arial, Helvetica, sans-serif;margin-bottom:10px;}
+h5{font-size:14px;font-weight:bold;font-family:Verdana, Arial, Helvetica, sans-serif;margin-bottom:10px;}
+h6{font-size:12px;font-weight:bold;font-family:Verdana, Arial, Helvetica, sans-serif;margin-bottom:5px;}
+/* ///////////////////////////////////////////////////////////////////// SPECIAL CLASSES */
+
+.ReadMore a{width:112px;height:37px;display:block;background:url(Images/ReadMore.png);}
+.FloatRight{float:right;margin-left:15px;}
+.FloatLeft{float:left; margin-right:15px;}
+.clearBoth{clear:both;padding-top:15px;}
+.requestAQuote{width:184px;height:36px;background:url(Images/RequestAQuote.png);background-repeat:no-repeat;margin-top:5px;}
+.white{color:#fff;}
+strong{font-weight:bold;}
+div.links p{margin-left:150px;}
+#BottomMiddle img{margin-left:15px;}
+
+/* ///////////////////////////////////////////////////////////////////// LAYOUT */
+#west{position:absolute;width:150px;height:128px;top:0px;right:0px; background:url(../Images/west.png);}
+body{background:#c2985a;}
+#Outer{width:1200px;margin-right:auto;margin-left:auto;background:url(Images/Outer.jpg);}
+	#Shadow{background:url(Images/Shadow.png);width:990px;margin-left:auto;margin-right:auto;}
+		#MainBody{background:url(Images/MainBody.jpg);width:961px;margin-left:auto;margin-right:auto;}
+			#Header{width:880px;height:93px;margin:0px 36px;}
+				#IconZone{width:72px;height:72px;float:left;margin-top:21px;}
+				#LogoZone{width:412px;height:57px;float:left;margin-left:135px;margin-top:20px;}
+				#LogoZone2{width:412px;height:57px;float:left;margin-left:135px;margin-top:5px;}
+				#PhoneNumberZone{width:200px;height:53px;float:right;margin-top:10px;text-align:right;color:#003300;}
+				#PhoneNumberZone p{font-family:Androgyne, Georgia, "Times New Roman", Times, serif;font-size:14px;line-height:22px;}
+				#SocialMediaZone{width:44px;height:28px;float:right;clear:right;margin-top:2px;margin-right:10px;}
+				#Jquery{height:289px;width:885px;background-color:#CC0000;margin-left:36px;background:url(Images/JqueryBG.jpg);margin-top:20px;overflow:hidden;position:relative;z-index:10;}
+				#Content{width:885px;padding:35px 36px 0px 36px;background:url(Images/JqueryShadow.png) no-repeat;background-position:12px 0px;overflow:hidden;}
+
+				#Footer{width:961px;height:230px;margin-left:auto;margin-right:auto;background:#333 url(Images/Footer.jpg) top center;background-repeat:no-repeat;}
+					#BottomLeft{width:200px;height:150px;float:left;margin-left:36px;margin-top:20px;}
+						#BottomLeft p,
+						#BottomLeft a{color:#fff;}
+						#BottomLeft h3{color:#fff;font-family:Androgyne, Georgia, "Times New Roman", Times, serif;color:#fff;margin-bottom:10px;font-size:22px;}
+						#BottomLeft ul{}
+						#BottomLeft ul li{}
+						#BottomLeft ul li a{font-size:12px;line-height:22px;}
+						
+					#BottomMiddle{width:250px;height:150px;float:left;margin-top:20px;}
+						#BottomMiddle p,
+						#BottomMiddle a{color:#fff;}
+						#BottomMiddle h3{color:#fff;font-family:Androgyne, Georgia, "Times New Roman", Times, serif;color:#fff;margin-bottom:10px;font-size:22px;}
+						#BottomMiddle input.Enter{padding:7px;width:200px;}
+						#BottomMiddle input.Button{width:112px;height:36px;display:block;background:url(Images/Submit.png);border:none;margin-top:5px;}
+						#BottomRight{width:400px;height:100px;float:left;margin-left:55px;margin-top:50px;}
+						#Credits{clear:both;margin-left:40px;}
+							#Credits p{color:#666;font-size:12px;}
+						
+/* ///////////////////////////////////////////////////////////////////// NAVIGATION */		
+
+			#TopNav{height:49px;margin:0px 36px;background:url(Images/TopNav.png) no-repeat;position:relative;z-index:999;}
+				#TopNav ul{overflow:hidden;height:49px;margin-left:85px;}
+					#TopNav ul li{display:block;float:left;margin-right:2px;}
+					#TopNav ul li a.home{width:25px;height:24px;background:url(Images/Home.png) no-repeat;display:block;margin-top:8px;margin-right:4px;}
+					#TopNav ul li a.home:hover{background:url(Images/Home.png) no-repeat;}
+					#TopNav ul li.home:hover{background:none;}
+					#TopNav ul li a.aboutus{width:108px;height:24px;display:block;text-align:center;}
+					#TopNav ul li a.services{width:96px;height:24px;display:block;text-align:center;}
+					#TopNav ul li a.commercial{width:133px;height:24px;display:block;text-align:center;}
+					#TopNav ul li a.ourstaff{width:133px;height:24px;display:block;text-align:center;}
+					#TopNav ul li a.education{width:114px;height:24px;display:block;text-align:center;}
+					#TopNav ul li a.contactus{width:113px;height:24px;display:block;text-align:center;}
+					#TopNav ul li a{float:left;color:#fff;text-decoration:none;padding-top:13px;padding-bottom:12px;height:49px;font-family:Androgyne, Georgia, "Times New Roman", Times, serif;font-size:14px;padding-left:10px;padding-right:10px;}
+					#TopNav ul li:hover{background:url(Images/TopNavHover.png) top center;}
+					#TopNav ul li + li + li + li:hover{background:url(Images/TopNavHoverNo.png) top center;}
+					#TopNav ul li + li + li + li +li:hover{background:url(Images/TopNavHover.png) top center;}
+					#TopNav ul li + li + li + li +li +li:hover{background:url(Images/TopNavHoverNo.png) top center;}
+			
+					#TopNav ul li:hover ul.aboutusdrop,
+					#TopNav ul li:hover ul.servicesdrop,
+					#TopNav ul li:hover ul.ourstaff,
+					#TopNav ul li:hover ul.education{display:block;position:absolute;z-index:999;}
+					
+					#TopNav ul li ul.aboutusdrop{width:237px;height:202px;display:none;position:absolute;top:50px;background:url(Images/DropDown2.png);padding-left:30px;padding-top:18px;margin-top:-6px;z-index:999;}
+					#TopNav ul li ul.servicesdrop{width:237px;height:202px;display:none;position:absolute;top:50px;background:url(Images/DropDown.png);padding-left:30px;padding-top:18px;margin-top:-6px;z-index:999;}
+					#TopNav ul li ul.education{width:237px;height:202px;display:none;position:absolute;top:50px;background:url(Images/DropDown3.png);padding-left:30px;padding-top:18px;margin-top:-6px;z-index:999;}
+					
+					#TopNav ul li ul.aboutusdrop li,
+					#TopNav ul li ul.servicesdrop li,
+					#TopNav ul li ul.education li{height:24px;overflow:hidden;padding:0px;margin:0px;}
+					
+					#TopNav ul li ul.aboutusdrop li:hover,
+					#TopNav ul li ul.servicesdrop li:hover,
+					#TopNav ul li ul.education li:hover{background:none;}
+					
+					#TopNav ul li ul li a{font-size:13px;}
+					#TopNav ul li ul.aboutusdrop li a,
+					#TopNav ul li ul.servicesdrop li a,
+					#TopNav ul li ul.ourstaff li a,
+					#TopNav ul li ul.education li a{display:block;clear:both;float:left;width:250px;background:url(Images/WhiteArrow.png) no-repeat 0px 0px;font-family:Arial, Helvetica, sans-serif;padding:0px 0px 0px 15px;}
+					
+					#TopNav ul li ul.aboutusdrop li a:hover,
+					#TopNav ul li ul.servicesdrop li a:hover,
+					#TopNav ul li ul.education li a:hover{background:url(Images/GreenArrow.png) no-repeat top left;background-position:0px 0px;color:#a3d39c;cursor:pointer;}
+					
+					#TopNav ul li ul.aboutusdrop{left:62px;}
+					#TopNav ul li ul.servicesdrop{left:186px;}
+					#TopNav ul li ul.ourstaff{left:398px;}
+					#TopNav ul li ul.education{left:468px;}
+			
+
+/* ///////////////////////////////////////////////////////////////////// HOME JQUERY */
+.images{position:relative;height:289px;width:885px;float:left;cursor:pointer;z-index:10;}
+	.images div{display:none;position:absolute;top:0;left:0;height:289px;font-size:12px;width:100%;z-index:10;}
+	.images h3{font-size:22px;font-weight:normal;margin:25px 0 20px 50px;color:#333;width:350px;position:absolute;font-family:Verdana, Arial, Helvetica, sans-serif;border-bottom:1px solid #999;padding-bottom:10px;margin-bottom:10px;left:0px;}
+	.images img{float:right;margin-top:20px;margin-right:50px;}
+	.images p{float:left;width:350px;margin-top:65px;margin-left:50px;border-bottom:1px solid #999;padding-bottom:15px;color:#999999;}
+	.images span.ReadMore{position:absolute;top:175px;left:48px;}
+
+/* tabs (those little circles below slides) */
+.slidetabs{margin-left:130px;width:200px;height:25px;position:absolute;top:230px;left:0px;z-index:999;}
+.slidetabs a{width:25px;height:25px;float:left;margin:3px;display:block;font-size:1px;background:url(Images/JqueryButton.jpg) no-repeat top right;}
+.slidetabs a:hover{background:url(Images/JqueryButton.jpg) no-repeat top left;}
+.slidetabs a.current{background:url(Images/JqueryButton.jpg) no-repeat top left;} 	
+
+.forward{margin-top:120px;display:block;width:30px;height:30px;cursor:pointer;font-size:1px;position:absolute;right:0px;background:url(Images/JqueryNextButton.jpg) no-repeat top left;width:28px;height:55px;}
+.backward{margin-top:120px;display:block;width:30px;height:30px;cursor:pointer;font-size:1px;position:absolute;left:0px;z-index:999;background:url(Images/JqueryPrevButton.jpg) no-repeat top left;width:28px;height:55px;}
+
+div.buttons{overflow:hidden;width:120px;height:30px;position:absolute;bottom:25px;left:260px;z-index:999;}
+div.buttons button{background:url(Images/JqueryPlayPauseButton.jpg);border:0px;border:none;cursor:pointer;background-repeat:no-repeat;width:18px;height:30px;}
+div.buttons button + button{background:url(Images/JqueryPlayPauseButton.jpg);border:0px;border:none;cursor:pointer;background-repeat:no-repeat;width:18px;height:30px;background-position:right top;}
+
+
+
+/* disabled navigational button. is not needed when tabs are configured with rotate: true */
+.disabled {visibility:hidden !important;		}
